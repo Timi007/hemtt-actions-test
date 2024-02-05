@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TST">
+    <Package name="main">
+    <Container name="Misc">
+        <Key ID="str_tst_main_authors">
+            <Original>Test-Team</Original>
+        </Key>
+        <Key ID="str_tst_main_URL">
+            <Original>www.example.com</Original>
+        </Key>
+    </Container>
+</Package>
+</Project>

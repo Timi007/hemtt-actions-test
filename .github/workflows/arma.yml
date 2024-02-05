@@ -1,0 +1,30 @@
+name: Arma
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the source code
+      uses: actions/checkout@v4
+    - name: Setup HEMTT
+      uses: Timi007/hemtt-action@main
+    - name: Run HEMTT build
+      run: hemtt build
+    - name: Print dir
+      run: ls -al
+    - name: Print dir
+      run: ls -al .hemttout
+    - name: Print annotation file
+      run: cat .hemttout/ci_annotations.txt
+    - name: Print trace file
+      run: cat .hemttout/latest.log
+    # - name: Test annotate 1
+    #   run: echo "::error file=/addons/main/config.cpp,line=30,endLine=30,title=missing semicolon::property is missing a semicolon"
+    # - name: Test annotate 2
+    #   run: echo "::warning file=addons/main/config.cpp,line=30,endLine=30,title=padding a macro argument::padding a macro argument"

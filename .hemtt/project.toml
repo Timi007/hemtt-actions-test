@@ -1,0 +1,10 @@
+name = "Test"
+mainprefix = "z"
+prefix = "tst"
+author = "Timi007"
+
+[files]
+include = []
+
+[version]
+git_hash = 0
