@@ -15,7 +15,7 @@ jobs:
     - name: Setup HEMTT
       uses: Timi007/hemtt-action@main
     - name: Run HEMTT build
-      run: hemtt build
+      run: hemtt build --no-bin
     - name: Print dir
       run: ls -al
     - name: Print dir
@@ -37,7 +37,7 @@ jobs:
     - name: Setup HEMTT
       uses: Timi007/hemtt-action@main
     - name: Run HEMTT build
-      run: hemtt build
+      run: hemtt build --no-bin
     - name: Print dir
       run: dir
     - name: Print dir
