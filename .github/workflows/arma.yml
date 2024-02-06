@@ -13,7 +13,7 @@ jobs:
     - name: Checkout the source code
       uses: actions/checkout@v4
     - name: Setup HEMTT
-      uses: Timi007/hemtt-action@main
+      uses: arma-actions/hemtt@main
     - name: Run HEMTT build
       run: hemtt build --no-bin
     - name: Print dir
@@ -35,7 +35,7 @@ jobs:
   #   - name: Checkout the source code
   #     uses: actions/checkout@v4
   #   - name: Setup HEMTT
-  #     uses: Timi007/hemtt-action@main
+  #     uses: arma-actions/hemtt@main
   #   - name: Run HEMTT build
   #     run: hemtt build --no-bin
   #   - name: Print dir
