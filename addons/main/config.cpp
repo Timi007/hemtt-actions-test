@@ -27,8 +27,4 @@ class CfgSettings {
     };
 };
 
-TEST(abc, "vvvv");
-TEST(aaa,"bbbb")
-TEST(dd,   "bbdawbb"  );
-TEST(aawdaa, "bbabb"  );
-TEST(aaawda, "bbwadbb");
+NOT_DEFINED_MACRO(1,2);
