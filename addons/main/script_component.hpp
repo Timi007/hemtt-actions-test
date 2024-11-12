@@ -15,5 +15,3 @@
 #endif
 
 #include "\z\tst\addons\main\script_macros.hpp"
-
-#define TEST(a,b) class a { dd = b; }

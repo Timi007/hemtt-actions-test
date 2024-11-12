@@ -27,6 +27,4 @@ class CfgSettings {
     };
 };
 
-TEST(abc, "vvvv");
-TEST(aaa,"bbbb")
-TEST(dd, "bbdawbb");
+#include "CfgEventHandlers.hpp"
