@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"PzGrenBtl402_Main"};
+        requiredAddons[] = {"tst_main"};
         author = ECSTRING(Main,authors);
         authors[] = {""};
         url = ECSTRING(Main,URL);
