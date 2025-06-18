@@ -28,3 +28,14 @@ class CfgSettings {
 };
 
 #include "CfgEventHandlers.hpp"
+
+// #define ATTRIBUTE(NAME) displayName = CSTRING(NAME);
+// #define MY_CAR(NAME) \
+// class NAME: Car { \
+//     ATTRIBUTE(NAME) \
+// }
+
+// class CfgVehicles {
+//     class Car;
+//     MY_CAR(DummyCar);
+// };
