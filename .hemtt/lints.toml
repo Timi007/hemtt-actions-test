@@ -1,0 +1,4 @@
+[sqf.var_all_caps]
+options.ignore = [
+    "PREP_RECOMPILE_START", "PREP_RECOMPILE_END"
+]
