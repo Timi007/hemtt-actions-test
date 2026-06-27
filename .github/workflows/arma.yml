@@ -22,6 +22,8 @@ jobs:
       run: ls -al
     - name: Print hemtt dir
       run: ls -al hemtt
+    - name: Run HEMTT build (known path)
+      run: hemtt/hemtt build --no-bin
     - name: Run HEMTT build
       run: hemtt build --no-bin
     # - name: Test annotate 1
