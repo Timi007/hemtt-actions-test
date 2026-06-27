@@ -17,7 +17,7 @@ jobs:
     - name: Print PATH
       run: echo $PATH
     - name: Print GITHUB_PATH
-      run: echo $GITHUB_PATH
+      run: cat $GITHUB_PATH
     - name: Print dir
       run: ls -al
     - name: Print hemtt dir
