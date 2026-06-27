@@ -11,19 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     - name: Setup HEMTT
-      uses: arma-actions/hemtt@v1
+      uses: Timi007/hemtt-action@debugging
     - name: Run HEMTT build
       run: hemtt build --no-bin
     - name: Print dir
       run: ls -al
-    - name: Print dir
-      run: ls -al .hemttout
-    - name: Print annotation file
-      run: cat .hemttout/ci_annotations.txt
-    - name: Print trace file
-      run: cat .hemttout/latest.log
+    - name: Print hemtt dir
+      run: ls -al hemtt
     # - name: Test annotate 1
     #   run: echo "::error file=/addons/main/config.cpp,line=30,endLine=30,title=missing semicolon::property is missing a semicolon"
     # - name: Test annotate 2
@@ -35,7 +31,7 @@ jobs:
   #   - name: Checkout the source code
   #     uses: actions/checkout@v4
   #   - name: Setup HEMTT
-  #     uses: arma-actions/hemtt@main
+  #     uses: Timi007/hemtt-action@main
   #   - name: Run HEMTT build
   #     run: hemtt build --no-bin
   #   - name: Print dir
